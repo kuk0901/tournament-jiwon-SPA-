@@ -14,8 +14,8 @@ export default class QuestionResult extends Component {
             Data[index[0]].src
           }')"></div>
           <div class="sub-title">${Data[index[0]].title}</div>
-          </div>
         </div>
+        <div class="btn btn-primary share-or-copy">SHARE</div>
       </div>
     `;
   }
