@@ -27,24 +27,33 @@ export default class QuestionsEight extends Component {
     let indexY = 0;
 
     sectionEl.innerHTML = /* html */ `
-    <div class="section-content">
-      <div class="content container-a">
-        <div class="first" style="background-image: url('${
-          Data[index[0]].src
-        }')"></div>
-        <div class="sub-title">${Data[index[0]].title}</div>
+      <div class="title">8강</div>
+      <div class="progress">
+        <div class="value"></div>
       </div>
-      <div class="content container-b">
-        <div class="second" style="background-image: url('${
-          Data[index.at(-1)].src
-        }')"></div>
-        <div class="sub-title">${Data[index.at(-1)].title}</div>
+      <div class="section-content">
+        <div class="content container-a">
+          <div class="first" style="background-image: url('${
+            Data[index[0]].src
+          }')"></div>
+          <div class="sub-title">${Data[index[0]].title}</div>
+        </div>
+        <div class="content container-b">
+          <div class="second" style="background-image: url('${
+            Data[index.at(-1)].src
+          }')"></div>
+          <div class="sub-title">${Data[index.at(-1)].title}</div>
+        </div>
       </div>
-    </div>
     `;
 
     const containerAEl = this.el.querySelector(".container-a");
     const containerBEl = this.el.querySelector(".container-b");
+    const progressValueEl = this.el.querySelector(".progress .value");
+
+    const currentNumber = questionStore.state.removeIndex.length;
+
+    progressValueEl.style.width = (currentNumber + 1) * (100 / 4) + "%";
 
     containerAEl.addEventListener("click", () => {
       containerAEl.classList.add("index");
@@ -54,6 +63,7 @@ export default class QuestionsEight extends Component {
         questionStore.state.removeIndex.push(indexX);
         questionStore.state.question = index;
       }
+
       containerAEl.classList.remove("index");
     });
     containerBEl.addEventListener("click", () => {

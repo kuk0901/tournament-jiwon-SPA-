@@ -27,6 +27,10 @@ export default class QuestionLast extends Component {
     let indexY = 0;
 
     sectionEl.innerHTML = /* html */ `
+      <div class="title">결승</div>
+      <div class="progress">
+        <div class="value"></div>
+      </div>
       <div class="section-content">
         <div class="content container-a">
           <div class="first" style="background-image: url('${
@@ -45,6 +49,11 @@ export default class QuestionLast extends Component {
 
     const containerAEl = this.el.querySelector(".container-a");
     const containerBEl = this.el.querySelector(".container-b");
+    const progressValueEl = this.el.querySelector(".progress .value");
+
+    const currentNumber = questionStore.state.removeIndex.length;
+
+    progressValueEl.style.width = (currentNumber + 1) * 100 + "%";
 
     containerAEl.addEventListener("click", () => {
       containerAEl.classList.add("index");

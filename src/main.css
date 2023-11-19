@@ -126,12 +126,33 @@ header a.instar span:hover {
 /* Question section */
 .section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.section .title {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.section .progress {
+  width: 500px;
+  height: 20px;
+  background-color: var(--color--white-50);
+  border-radius: 7px;
+  margin: 10px auto;
+  transition: 0.2s;
+}
+.section .progress .value {
+  height: 20px;
+  background-color: var(--color--hover);
+  color: var(--color--white-50);
+  text-align: center;
+  border-radius: 7px;
+  transition: 0.2s;
+}
 .section .section-content {
   --content-height: 550px;
-  margin: 30px auto 45px;
+  margin: 30px auto;
   border: 2px solid #fff;
   display: flex;
 }
@@ -164,10 +185,17 @@ header a.instar span:hover {
 /* Result */
 .result-content {
   --content-height: 550px;
-  margin: 30px auto 45px;
+  margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.result-content .title {
+  font-size: 23px;
+  text-align: center;
+  color: var(--color--white-50);
+  margin: 20px;
 }
 .result-content .content {
   border: 2px solid #fff;

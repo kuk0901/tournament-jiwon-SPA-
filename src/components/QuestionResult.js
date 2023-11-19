@@ -8,6 +8,7 @@ export default class QuestionResult extends Component {
 
     this.el.innerHTML = /* html */ `
       <div class="result-content">
+        <div class="title">2023, 당신이 선택한 가장 눈부신</div>
         <div class="content">
           <div class="result-picture" style="background-image: url('${
             Data[index[0]].src
