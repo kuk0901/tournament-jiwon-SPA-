@@ -12,7 +12,7 @@ export default class TheHeader extends Component {
       RESET
     </button>
     <div class="logo">
-      TOURNAMENT-JIWON
+      TOURNAMENT JIWON
     </div>
     <a href="https://www.instagram.com/xjiwonparkx/" target="_blank" class="instar">
       출처: <span>박지원 인스타그램(xjiwonparkx)</span>
