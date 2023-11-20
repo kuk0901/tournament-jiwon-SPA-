@@ -289,7 +289,7 @@ header a.instar span:hover {
   width: 390px;
   height: calc(var(--content-height) - 30px);
 }
-.section .section-content .contents:hover {
+.section .section-content .contents:active {
   background-color: #000;
   border: 3px solid #fff;
   transform: scale(1.1);
