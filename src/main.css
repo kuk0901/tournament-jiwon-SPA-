@@ -167,7 +167,7 @@ header a.instar span:hover {
   }
   header .logo {
     font-size: 28px;
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
 @media (max-width: 479px) {
@@ -179,7 +179,7 @@ header a.instar span:hover {
   }
   header .logo {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
 
@@ -346,15 +346,15 @@ header a.instar span:hover {
     margin: 5px auto;
   }
   .section .section-content {
-    --content-height: 400px;
+    --content-height: 380px;
   }
   .section .section-content .contents {
-    width: 240px;
+    width: 220px;
     height: calc(var(--content-height) - 30px);
   }
   .section .section-content .contents .first,
   .section .section-content .contents .second {
-    background-size: 240px 100%;
+    background-size: 220px 100%;
   }
   .section .contents .sub-title {
     font-size: 15px;
@@ -370,15 +370,15 @@ header a.instar span:hover {
     margin: 10px auto;
   }
   .section .section-content {
-    --content-height: 350px;
+    --content-height: 330px;
   }
   .section .section-content .contents {
-    width: 190px;
+    width: 170px;
     height: calc(var(--content-height) - 30px);
   }
   .section .section-content .contents .first,
   .section .section-content .contents .second {
-    background-size: 190px 100%;
+    background-size: 170px 100%;
   }
   .section .contents .sub-title {
     font-size: 14px;
