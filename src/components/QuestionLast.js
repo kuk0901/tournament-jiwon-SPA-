@@ -70,7 +70,7 @@ export default class QuestionLast extends Component {
       if (containerBEl.classList.contains("index")) {
         indexX = index.shift();
         indexY = index.pop();
-        questionStore.state.removeIndex.push(indexX);
+        questionStore.state.removeIndex.push(indexY);
         questionStore.state.question2 = index;
       }
       containerBEl.classList.remove("index");
